@@ -133,27 +133,18 @@ text-decoration:none;
 
 
 
-<audio id="music" loop>
-
-<source src="music.mp3" type="audio/mpeg">
-
+<audio id="music" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
 </audio>
 
-
-
 <script>
+window.addEventListener('load', function() {
+    const music = document.getElementById('music');
 
-
-let music = document.getElementById("music");
-
-
-document.body.addEventListener("click", function(){
-
-music.play();
-
-}, {once:true});
-
-
+    music.play().catch(function(error) {
+        console.log("Автозапуск заблокований браузером:", error);
+    });
+});
 </script>
 
 
