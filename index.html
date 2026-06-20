@@ -1,123 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 
 <title>Подарунок для хрещениці</title>
 
+
 <style>
+
 
 body {
 
-    margin: 0;
-    padding: 10px;
+margin:0;
+padding:0;
 
-    background: #fff7f0;
+height:100vh;
 
-    text-align: center;
+background:#fff7f0;
 
-    font-family: Arial;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+font-family:Arial;
+
+}
+
+
+.container {
+
+width:100%;
 
 }
 
 
 h1 {
 
-    font-size: 40px;
-
-    margin-bottom: 10px;
+font-size:38px;
 
 }
-
 
 
 img {
 
-    width: 95%;
+width:90%;
 
-    max-width: 600px;
+max-width:550px;
 
-    border-radius: 25px;
+border-radius:25px;
 
 }
-
 
 
 h2 {
 
-    font-size: 36px;
-
-    margin-top: 15px;
-
-    margin-bottom: 10px;
+font-size:32px;
 
 }
-
-
-
-p {
-
-    font-size: 24px;
-
-}
-
 
 
 .button {
 
 
-    display: inline-block;
+display:inline-block;
 
 
-    margin-top: 25px;
+margin-top:25px;
 
 
-    padding: 25px 60px;
+padding:25px 60px;
 
 
-    background: #ff7ac3;
+background:#ff7ac3;
 
 
-    color: white;
+color:white;
 
 
-    font-size: 34px;
+font-size:32px;
 
 
-    font-weight: bold;
+font-weight:bold;
 
 
-    border-radius: 60px;
+border-radius:60px;
 
 
-    text-decoration: none;
+text-decoration:none;
 
 
 }
 
 
-
 </style>
 
+
 </head>
+
 
 
 <body>
 
 
+<div class="container">
+
+
 <h1>🎂 З Днем Народження!</h1>
 
 
-<img src="LOGO.jpg">
+
+<img src="labubu.jpg">
 
 
-<h2>🧸 Пазлик вітає тебе!</h2>
 
+<h2>🧸 Пазлик вітає тебе!!!</h2>
 
-<p>
-Бажаю тобі багато радості,
-посмішок та веселих пригод!
-</p>
 
 
 <a class="button" href="story.html">
@@ -125,6 +127,35 @@ p {
 📖 Почати привітання
 
 </a>
+
+
+</div>
+
+
+
+<audio id="music" loop>
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+<script>
+
+
+let music = document.getElementById("music");
+
+
+document.body.addEventListener("click", function(){
+
+music.play();
+
+}, {once:true});
+
+
+</script>
+
 
 
 </body>
