@@ -4,38 +4,27 @@
 
 <meta charset="UTF-8">
 
-<title>Лабубу</title>
+<title>Лабубу AR</title>
 
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
 
 
 <style>
 
 body {
-
 margin:0;
-
 background:#fff7f0;
-
-font-family:Arial;
-
 text-align:center;
-
-}
-
-
-h1 {
-
-font-size:35px;
-
+font-family:Arial;
 }
 
 
 model-viewer {
 
 width:100%;
-
-height:75vh;
+height:80vh;
 
 }
 
@@ -50,33 +39,28 @@ background:#ff7ac3;
 
 color:white;
 
+border-radius:40px;
+
 font-size:25px;
-
-font-weight:bold;
-
-border-radius:50px;
 
 text-decoration:none;
 
 }
-
 
 </style>
 
 </head>
 
 
-
 <body>
 
 
-<h1>Лабубу</h1>
-
+<h1>🧸 Лабубу</h1>
 
 
 <model-viewer
 
-src="scene.gltf"
+src="./scene.glb"
 
 ar
 
@@ -86,11 +70,12 @@ camera-controls
 
 auto-rotate
 
-shadow-intensity="1">
+shadow-intensity="1"
+
+ar-placement="floor">
 
 
 </model-viewer>
-
 
 
 <a class="button" href="index.html">
@@ -98,7 +83,6 @@ shadow-intensity="1">
 ⬅ Назад
 
 </a>
-
 
 
 </body>
